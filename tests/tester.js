@@ -200,7 +200,7 @@ function runTests (name, runnerArgs, cb) {
   runnerArgs.gasLimit = argv.gas
   runnerArgs.value = argv.value
 
-  // runnerArgs.vmtrace = true; // for VMTests
+  runnerArgs.vmtrace = true; // for VMTests
 
   if (argv.customStateTest) {
     const stateTestRunner = require('./GeneralStateTestsRunner.js')
